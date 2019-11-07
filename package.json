@@ -1,33 +1,38 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
-  "private": true,
-  "description": "TypeScript template action",
+  "name": "@helsenorge/slack-notifier",
+  "version": "0.0.1-dev.0",
   "main": "lib/main.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "https://github.com/actions/typescript-action.git"
   },
+  "homepage": "https://helsenorge.design",
+  "description": "A GitHub action that sends various slack notifications with a web hook.",
+  "author": "Steffen Lien <steffen.lien@ehelse.no>",
+  "license": "MIT",
   "keywords": [
+    "helsenorge",
+    "slack",
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
-  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node lib/main.js",
+    "test": "jest"
+  },
   "dependencies": {
-    "@actions/core": "^1.0.0"
+    "@actions/core": "^1.2.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@types/node": "^12.0.4",
-    "jest": "^24.8.0",
-    "jest-circus": "^24.7.1",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.5.1"
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.6",
+    "jest": "^24.9.0",
+    "jest-circus": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
   }
 }
