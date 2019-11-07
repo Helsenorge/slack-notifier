@@ -32,9 +32,7 @@ async function run() {
   const chosenThumbnail = await getRandomThumbnail();
   const version = await getPackageVersion("dev");
   const message = await newRelease(chosenThumbnail, version);
-  // const url = core.getInput("webHookUrl", { required: true });
-  const url =
-    "https://hooks.slack.com/services/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";
+  const url = core.getInput("webHookUrl", { required: true });
   const response = await fetch(url, {
     method: "POST",
     headers: {
