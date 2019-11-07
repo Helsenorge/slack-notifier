@@ -40,7 +40,7 @@ async function run() {
     },
     body: JSON.stringify(message)
   });
-  console.log("response", response);
+  console.log("response", await response);
 }
 
 run();
