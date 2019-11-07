@@ -12,7 +12,7 @@ const thumbnailUrls = [
 
 const getRandomThumbnail = () => {
   return new Promise(resolve => {
-    const randomThumbnail = Math.floor(Math.random() * 2);
+    const randomThumbnail = Math.floor(Math.random() * 4);
     resolve(thumbnailUrls[randomThumbnail]);
   });
 };
