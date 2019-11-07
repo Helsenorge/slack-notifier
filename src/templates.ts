@@ -6,7 +6,7 @@ export const newRelease = (thumbnail, version) => {
           type: "section",
           text: {
             type: "mrkdwn",
-            text: `*HNDS \`${version}\` has been published! :rocket:*\nGrab hold of your keyboard and boot up your favorite terminal to upgrade! Use either \`yarn upgrade @helsenorge/designsystem@dev\` or \`npm update @helsenorge/designsystem@dev\` to use the new package.`
+            text: `*HNDS \`${version}\` has been published! :rocket:*\nGrab hold of your keyboard and boot up your favorite terminal to upgrade! Use \`yarn upgrade @helsenorge/designsystem@dev\` to update to our newest package version.`
           },
           accessory: {
             type: "image",
